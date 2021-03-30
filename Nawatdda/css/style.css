@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+body {
+	min-width: 980px;
+	background: #000;
+}
+
+.main-head{
+	width:100%;
+	background:url(../img/background/main.png) no-repeat center;
+}
+.img-top{
+	position:relative;
+}
+
+.img-top img{
+	pasition:
+}
