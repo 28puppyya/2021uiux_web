@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>slider tap</title>
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <link rel="stylesheet" href="">
+  <style>
+
+.topHead  { width: 1200px; margin: 0 auto;background:#1651b7;}
+.snav {width: 373px;   float:left; margin-left: 8.8%;}
+.snav>ul>li{float:left; width:calc(373px / 3);background:#092961;
+              line-height: 42px;text-align:center;color:#fff;}
+
+
+.snav>ul>li:first-child {background: #fff;}
+.snav>ul>li:first-child a {color: #000;}
+
+
+.rnav { right: 8.8%; width:330px; }
+.rnav>ul>li { float:left; width: calc(330px / 5); }
+.rnav>ul>li>a{ text-align: center; color:#fff;line-height: 42px;}
+  </style>
 </head>
 <body>
-<div id="contents"> <!--100%-->
-   <section class="titleWrap"><!--1200px center-->
-       
-   </section>
-   <div class="container">
-       <ul class="clearfix">
-           <li>01</li>  
-           <li>02</li>
-           <li>03</li>
-           <li>04</li>
-           <li>05</li>
-           <li>06</li>
-           <li>07</li>
-           <li>08</li>
-       </ul>
-   </div>
-    
-</div>    
+<div id="contents "> <!--100%-->
+ <section class="titleWrap clearfix mb20"><!--1200px center-->
+    <div class="topHead clearfix">
+        <snav class="snav">
+        <ul class="clearfix">
+          <li><a href="#">대학교</a></li>
+          <li><a href="#">입학안내</a></li>
+          <li><a href="#">대학원</a></li>
+        </ul>
+      </snav>
+      <div class="rnav">
+        <ul class="clearfix">
+          <li><a href="#">글자크기</a></li>
+          <li><a href="#"><img src="images/headicon.png" alt=""></a>
+          <li><a href="#">찾아오시는</a>
+          <li><a href="#">ENGLISH</a>
+          <li><a href="#">사이트</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
 
 
+    </style>
+    <div class="centerHead">
+      <ul class="main_nav clearfix">
+        <li><a href="#">대학소개</a></li>
+        <li><a href="#">학과소개</a></li>
+        <li><a href="#">학사안내</a></li>
+        <li><a href="#">대학생활</a></li>
+        <li><a href="#">학생지원센터</a></li>
+        <li><a href="#"><img src="images/headicon_burger.png" alt="">
+              <img src="#" alt="images/headicon_id.png"></a></li>
+      </ul>
+    </div>
+ </section>
 
 
+     <ul class="clearfix">
+         <li>01<img src="images/sec1_button.png" alt="버튼"></li>
+         <li>02<img src="images/sec1_li2_button.png" alt=""></li>
+         <li>03
+           <img src="images/sec3_icon1.png" alt=""><h3>국재교류<br>센터</h3>
+           <img src="images/sec3_icon2.png" alt=""><h3>원격지원<br>시스템</h3>
+           <img src="images/sec3_icon3.png" alt=""><h3>예산/결산<br>공고</h3>
 
+         </li>
+         <li>04
 
+        </li>
+         <li>05</li>
+         <li>06
+          <img src="images/sec2_li3_img.png" alt="사진">
+          <img src="images/sec2_li3_icon1.png" alt="">
+          <img src="images/sec2_li3_icon2.png.png" alt="">
+          <img src="images/sec2_li3_icon3.png" alt="">
+          <img src="images/sec2_li3_icon4.png" alt="">
 
-</body>
-</html>
+         </li>
+         <li>07</li>
+         <li>08</li>
+     </ul>
+ </div>
+
+</div>

@@ -6,6 +6,8 @@
 			width: 1200px;
 			margin: 0 auto;
 			height:40px;
+			position: relative;
+			z-index: 1;
 			
 		}
 		.gnb > ul > li {float: left;width: 20%;background: skyblue; }
@@ -13,13 +15,16 @@
 		
 		.gnb > ul > li > a{display: block;line-height: 40px; text-align: center;}
 		.gnb > ul > li:hover  a {color: white;}
-		/*.gnb > ul > li:hover .submenu {display: block;}*/
-		.gnb > ul:hover .submenu {display: block;}
+		.gnb > ul > li:hover .submenu {display: block;}
+/*		.gnb > ul:hover .submenu {display: block;}*/
 		
 		.gnb .submenu{display: none;}
+        .gnb .submenu {margin-bottom:10px; position : absolute;}
 		.gnb .submenu li:hover {background: #b2dff2;}
 		.gnb .submenu li a {display: block; line-height: 30px; text-align: center;}
 		
 		
-		.visual {height :400px;background: orange;}
+		.visual {}
+		
+.visual li img{width:100%;}
 		

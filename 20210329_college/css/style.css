@@ -1,15 +1,16 @@
 @charset "utf-8";
 
 /*contents*/
-#contents{
+.container{
    height:1300px;
-    background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
+    background-image: url(../images/doted.png),url(../images/main_bg.png;);
     background-repeat: repeat,no-repeat;
     background-position:center;
     background-size:auto,cover;
     padding:100px 0;
+    overflow:hidden;
 }
-#contents .titleWrap{
+contents .titleWrap{
     width: 1200px;height: 260px;background: violet;margin: 0 auto;
     margin-bottom: 50px;
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+<body>
+  <div id="demo"></div>
+  <div id="week"></div>
+  <script>
+
+  var week = new Date();
+  var day;
+  document.getElementByID("demo").innerHTML = week.getDay();
+  if(week.getDay() ==4) {
+    day ="목요일";
+  }
+  document.getElementByID("week").innerHTML = "목요일"
+
+  </script>
+</body>
+</html>
