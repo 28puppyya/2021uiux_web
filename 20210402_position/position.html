@@ -5,65 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/reset.css">
-  <title>position</title>
-
+  <link rel="favicon icon" href="../images/banana.png">
+  <title>test</title>
   <style>
-* {margin:0; padding:0;}
+
+    #wrapContant {width:100%; margin:0 auto;}
+    .header { width: 1200px; margin:0 auto; margin-bottom:20px;
+              overflow:hiden;}
+
+    .logo {float:left;}
 
 
-.header  {width:1200px; margin:0 auto; margin-bottom:20px;}
+    .logo .banana { width: 100px; height:100px;}
 
-.header h1 { text-align: center; display:block; margin:0 auto; padding-top :10px;
-      padding-bottom: 10px; }
+    .manu {float:right; margin-top:50px;}
 
-.header ul li { float:left; width:calc( 1200px / 5); border:1px solid #000;
-        padding-bottom:10px;}
+    .manu li {float:left; width:100px;border:1px solid #000; text-align: center;}
+    .manu li:nth-child(2) {border-left-style:none;border-right-style:none
+    }
+    .menu li a {display:block;  line-height: 20px;}
 
-.header ul li a {text-align:center; display:block; align-items: center;
-          padding:5px;}
+    .section { width:1200px;margin:0 auto; background: #e7b36f;}
+    .section ul li {
+					display: inline-block;
+                     float:left;
+                    width: 200px;
+                    height:400px;
+                    margin-right:calc(300px / 3);
+                    border:1px solid #000;}
 
-div.visual { background: url(../images/pc01.jpg);}
+    .notice { background: #c83333; text-align:center;}
+    .notice:hover { background: #5b1717;}
 
-.section {width: 1200px; margin:0 auto;}
-.aside{width:400px; height:600px;}
-.content {width:600px; height: 600px;}
+    .gallay { background: #42d459;text-align:center;}
+    .gallay:hover { background: #1a4d22;text-align:center;}
+
+    .popup{ background: #c533c8;text-align:center;}
+    .popup:hover { background: #501352;text-align:center;}
+	  .popo{ background: #333fce;text-align:center;}
+    .popo:hover { background: #191f60;text-align:center;}
+
+
+
+
+  .footer { width:1200px; margin: 0 auto;
+             border:1px solid #000;
+             }
+  .footer ul{display:flex; justify-content: space-between;}
+  .footer ul li {
+
+              border: 1px solid #666;
+              float:left;  text-align:center;
+              padding: 10px 20px;
+              /* width:calc(1100px /3); */
+
+                  }
+  .footer ul li:nth-child(2) { border-left-style: none;
+                              border-right-style:none;}
+
   </style>
+
 </head>
-
-
 
 <body>
+  <div id="wrapContant">
+  <header class="header clearfix">
+    <logo class="logo">
+      <a href=""><img src="../images/banana.png" alt="banana" class="banana"></a>
+    </logo>
+
+      <ul class="manu clearfix">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ul>
 
 
-<header class="header">
-  <h1>logo</h1>
-  <ul class="menu c learfix">
-    <li><a href="#">MENU1</a></li>
-    <li><a href="#">MENU2</a></li>
-    <li><a href="#">MENU3</a></li>
-    <li><a href="#">MENU4</a></li>
-    <li><a href="#">MENU5</a></li>
-  </ul>
-</header>
+  </header>
 
-<div class="visual">
+
+
+  <section class="section clearfix">
+    <ul class="clearfix">
+      <li class="notice"> notice</li>
+      <li class="gallay"> gallay</li>
+      <li class="popup"> popup</li>
+      <li class="popo"> popup</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+   <ul class="clearfix">
+     <li>logo</li>
+     <li>copyright</li>
+     <li>sns</li>
+   </ul>
+
+  </footer>
 </div>
-
-<section class="section clearfix">
-  <div class="aside"></div>
-  <div class="content"></div>
-
-</section>
-
-<footer class="footer">
-  <adress></adress>
-</footer>
-
-
-</head>
-
-
-
 </body>
 
 </html>
