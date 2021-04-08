@@ -18,11 +18,42 @@
 .centerHead {width: 1500px ; height: 1308px;
             background: url(images/doted.png),url(images/main_bg.png);}
 
+<<<<<<< HEAD
+=======
+
+.titleWrap{width:100%; height: 41px;background: #0044af;margin:0 auto;}
+.topHead { width: 1200px; margin:0 auto;}
+
+.snav{ float:left; }
+
+.snav>ul>li { float:left; width:120px; text-align: center; line-height: 41px;
+              background: #00163b;
+              margin-right:2px;
+              border-radius: 10px 10px 0px 0px;}
+.snav>ul>li>a {color: #fff;}
+.snav>ul>li:first-child {background: #fff;}
+.snav>ul>li:first-child >a{color: #000;}
+
+.rnav{float:right;}
+.rnav>ul>li{ float:left; line-height: 41px;
+            padding-left: 30px;}
+.rnav>ul>li>a { color: #fff;font-size:12px;}
+
+.centerHead { width:1500px; margin: 0 auto; height:114px; overflow:hidden; }
+.mainhead  { width:1200px; margin: 0 auto;}
+.main_nav{ float:right;}
+.main_nav>li { float: left; width:calc( 794px / 6 ); line-height: 114px;}
+.main_nav>li:nth-child(6) {margin-right: 0;padding-right: 0px; }
+.main_nav>li:nth-child(7) {margin-left: 0;padding-left: 0px;}
+.main_nav>li>a {font-size: 18px; font-weight:bold;}
+
+>>>>>>> 80c683dd4f48cff3f75897b2ae4b3a8494306dce
   </style>
 </head>
+
 <body>
-<div id="contents "> <!--100%-->
- <section class="titleWrap clearfix mb20"><!--1200px center-->
+
+ <section class="titleWrap clearfix"><!--1200px center-->
     <div class="topHead clearfix">
         <snav class="snav">
         <ul class="clearfix">
@@ -34,34 +65,67 @@
       <div class="rnav">
         <ul class="clearfix">
           <li><a href="#">글자크기</a></li>
-          <li><a href="#"><img src="images/headicon.png" alt=""></a>
-          <li><a href="#">찾아오시는</a>
-          <li><a href="#">ENGLISH</a>
-          <li><a href="#">사이트</a>
-          </li>
+          <li><a href="#"><img src="images/headicon.png" alt=""></a> </li>
+          <li><a href="#">찾아오시는</a> </li>
+          <li><a href="#">ENGLISH</a> </li>
+          <li><a href="#">사이트</a></li>
         </ul>
       </div>
     </div>
+    </section>
 
-    <style>
 
-
-    </style>
     <div class="centerHead">
-      <ul class="main_nav clearfix">
-        <li><a href="#">대학소개</a></li>
-        <li><a href="#">학과소개</a></li>
-        <li><a href="#">학사안내</a></li>
-        <li><a href="#">대학생활</a></li>
-        <li><a href="#">학생지원센터</a></li>
-        <li><a href="#"><img src="images/headicon_burger.png" alt="">
-              <img src="#" alt="images/headicon_id.png"></a></li>
-      </ul>
+      <mainhead class="mainhead">
+          <ul class="main_nav clearfix">
+            <li><a href="#">대학소개</a></li>
+            <li><a href="#">학과소개</a></li>
+            <li><a href="#">학사안내</a></li>
+            <li><a href="#">대학생활</a></li>
+            <li><a href="#">학생지원센터</a></li>
+            <li><a href="#"><img src="images/headicon_burger.png" alt=""></a>
+              <a href="#"><img src="images/headicon_id.png" alt=""></a></li>
+          </ul>
+        </mainhead>
     </div>
- </section>
+
+<style>
+.section { background-image: url(images/doted.png),url(images/main_bg.png);
+          background-repeat: no-repeat,no-repeat;
+          background-size: cover,cover;
+          height:1039px;
+           }
+
+.secHead{width:1200px; margin:0 auto; padding-top: 87px;
+         overflow: hidden;}
+.secHead_icon {float : right;}
+.secHead_icon li{ float:left; padding-left: 20px;}
+.sect {float:left;}
+.sect h3 {font-size: 20.1px; color :#fff; padding-bottom: 17px;}
+.sect h1 {font-size: 50.7px; color:#fff;}
+
+.mbg {width:1200px; height:904px;margin: 0 auto;
+      background-color: #aec6f9; background-repeat:no-repeat;
+      background-size:cover;}
+
+</style>
 
 
-     <ul class="clearfix">
+<section class="section clearfix">
+  <div class="secHead">
+       <div class="sect">
+       <h3>함께 나누며 세상을 이끌어</h3>
+       <h1>세계로향하는 한국대학교</h1>
+       </div>
+       <ul class="secHead_icon clearfix">
+         <li><a href="#"><img src="images/main-icon1.png" alt=""></a></li>
+         <li><a href="#"><img src="images/main-icon2.png" alt=""></a></li>
+         <li><a href="#"><img src="images/main-icon3.png" alt=""></a></li>
+         <li><a href="#"><img src="images/main-icon4.png" alt=""></a></li>
+       </ul>
+  </div>
+  <mainContent class="mb">
+     <ul class="mbg clearfix">
          <li>01<img src="images/sec1_button.png" alt="버튼"></li>
          <li>02<img src="images/sec1_li2_button.png" alt=""></li>
          <li>03
@@ -70,9 +134,7 @@
            <img src="images/sec3_icon3.png" alt=""><h3>예산/결산<br>공고</h3>
 
          </li>
-         <li>04
-
-        </li>
+         <li>04</li>
          <li>05</li>
          <li>06
           <img src="images/sec2_li3_img.png" alt="사진">
@@ -85,6 +147,7 @@
          <li>07</li>
          <li>08</li>
      </ul>
- </div>
+    </mainContent>
+</section>
 
-</div>
+</body>
