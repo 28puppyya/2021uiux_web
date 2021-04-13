@@ -4,7 +4,7 @@
 *{margin:0 ; padding:0; box-sizing: border-box;}
 a:link, a:visited{
 	color:#000;text-decoration:none;
-	
+
 }
 li{ list-style:none;}
 
@@ -12,5 +12,10 @@ li{ list-style:none;}
 	content:"";
 	display: block;
 	clear:both;}
+
+.mb20 {margin-bottom:20px;}
+.mb30 {margin-bottom:30px;}
+.mb40 {margin-bottom:40px;}
+.mb50 {margin-bottom:50px;}
 
 /*-----기본 홈*/
